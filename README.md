@@ -2,6 +2,7 @@
 
 A desktop app for explore your Jspare Gekko Cloud.
 
+![backtest_view](./images/demo1.gif)
 
 
 ## Try also
