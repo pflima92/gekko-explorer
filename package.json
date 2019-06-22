@@ -34,7 +34,7 @@
     "react-websocket": "^2.0.1",
     "typescript": "^2.1.0"
   },
-  "homepage": "https://github.com/jspare-projects/jspare-gekko-explorer",
+  "homepage": "./",
   "main": "src/electron-starter.js",
   "scripts": {
     "start": "react-scripts start",

@@ -16,7 +16,7 @@ function createWindow() {
     mainWindow = new BrowserWindow({
         width: 800, 
         height: 600, 
-        icon: __dirname + '/icon/apple-icon.png',
+        icon: __dirname + '/assets/icon.ico',
         webPreferences: { nodeIntegration: true }
     });
 
