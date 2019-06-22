@@ -1,0 +1,44 @@
+[
+    {
+        "name": "resources.mySpace.name",
+        "icon": "desktop_mac",
+        "childs": [
+            {
+                "name": "resources.backtestEditor.name",
+                "to": "/backtest-editor",
+                "icon": "bug_report"
+            },
+            {
+                "name": "resources.backtests.name",
+                "to": "/backtests",
+                "icon": "assessment"
+            }
+        ]
+    },
+    {
+        "name": "resources.systemProfile.name",
+        "icon": "cloud",
+        "childs": [
+            {
+                "name": "resources.datasets.name",
+                "to": "/datasets",
+                "icon": "view_agenda"
+            },
+            {
+                "name": "resources.imports.name",
+                "to": "/imports",
+                "icon": "system_update"
+            }
+        ]
+    },
+    {
+        "name": "Gekko UI",
+        "icon": "link",
+        "to" : "/gekko-ui"
+    },
+    {
+        "name": "Settings",
+        "icon": "settings",
+        "to" : "/settings"
+    }
+]

@@ -1,0 +1,66 @@
+{
+  "name": "jspare-gekko-explorer",
+  "description": "A desktop app for explore your Jspare Gekko Cloud.",
+  "author": {
+    "name": "Paulo Lima",
+    "email": "pflima92@gmail.com",
+    "url": "http://gekko.jspare.org"
+  },
+  "repository": "https://github.com/jspare-projects/jspare-gekko-explorer",
+  "license": "MIT",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@material-ui/core": "^1.4.0",
+    "@material-ui/icons": "^1.0.0",
+    "electron": "^1.7.9",
+    "electron-builder": "^20.43.0",
+    "env-cmd": "^8.0.2",
+    "foreman": "^2.0.0",
+    "react-scripts": "1.1.4",
+    "recompose": "~0.26.0"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "ra-language-english": "^2.8.5",
+    "react": "~16.3.1",
+    "react-ace": "^7.0.2",
+    "react-admin": "^2.9.2",
+    "react-dom": "~16.3.1",
+    "react-iframe": "^1.8.0",
+    "react-json-view": "^1.19.1",
+    "react-moment": "^0.9.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-websocket": "^2.0.1",
+    "typescript": "^2.1.0"
+  },
+  "homepage": "https://github.com/jspare-projects/jspare-gekko-explorer",
+  "main": "src/electron-starter.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dev": "nf start -p 4000",
+    "electron-start": "electron .",
+    "preelectron-pack": "npm run build",
+    "electron-pack": "build --win"
+  },
+  "build": {
+    "appId": "org.jspare.gekko",
+    "productName": "Jspare Gekko Explorer",
+    "files": [
+      "./build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "win": {
+    "target": "nsis",
+    "publisherName": "Jspare.org",
+    "rfc3161TimeStampServer": "http://sha256timestamp.ws.symantec.com/sha256/timestamp"
+  }
+}
