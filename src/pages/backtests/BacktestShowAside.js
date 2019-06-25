@@ -70,7 +70,7 @@ const BacktestShowAside = withStyles(styles)(({ classes, onCancel, ...props }) =
             <NumberField source="performanceReport.trades" className={classes.inlineField} />
 
             <TextField source="performanceReport.endTime" className={classes.inlineField} />
-            <NumberField source="performanceReport.market" options={{ style: 'percent' }} className={classes.inlineField} />
+            <NumberField source="performanceReport.market" options={{ maximumFractionDigits: 2 }} className={classes.inlineField} />
 
             <TextField source="performanceReport.timespan" />
 
@@ -79,7 +79,7 @@ const BacktestShowAside = withStyles(styles)(({ classes, onCancel, ...props }) =
             <NumberField source="performanceReport.endPrice" locales="pt-BR" className={classes.inlineField} options={{ maximumFractionDigits: 5 }} />
             <NumberField source="performanceReport.balance" className={classes.inlineField} options={{ maximumFractionDigits: 5 }} />
 
-            <NumberField source="performanceReport.relativeProfit" ptions={{ maximumFractionDigits: 3 }} />
+            <NumberField source="performanceReport.relativeProfit" options={{ maximumFractionDigits: 3 }} />
 
             <Divider />
 
