@@ -141,7 +141,19 @@ class BacktestEditor extends Component {
         };
 
         request[data.tradingAdvisor.method] = paramsAsObject;
-        alert(JSON.stringify(request));
+
+        fetch(`${getConfig().baseUrl}/api/backtestBulk`, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(request)
+        }).then(() => {
+            alert(`Backtest Successfully triggered with parentId=${data.parentId}`);
+            window.location = `#/backtests?filter={"parentId":"${data.parentId}"}`
+        }).catch(err => alert(`Fail while processing your current backtest. ${err.message}`));
+
 
         this.setState({
             results: {
