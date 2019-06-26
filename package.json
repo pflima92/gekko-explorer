@@ -8,7 +8,7 @@
   },
   "repository": "https://github.com/jspare-projects/jspare-gekko-explorer",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "devDependencies": {
     "@material-ui/core": "^1.4.0",
     "@material-ui/icons": "^1.0.0",
