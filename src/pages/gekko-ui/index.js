@@ -3,7 +3,8 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import { Title, translate } from 'react-admin';
 import { compose } from 'recompose';
 import Iframe from 'react-iframe'
-import { getConfig } from '../../config';
+
+import './index.css'
 
 const styles = {};
 
@@ -16,7 +17,7 @@ class GekkoUi extends Component {
         return (
             <Fragment>
                 <Title title={'Gekko UI'} />
-                <Iframe url={getConfig().baseUrl}
+                <Iframe url={'ext/gekko-ui/index.html'}
                     frameBorder={0}
                     width="100%"
                     height="1280px"
