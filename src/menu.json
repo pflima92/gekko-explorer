@@ -20,11 +20,6 @@
         "icon": "cloud",
         "childs": [
             {
-                "name": "resources.datasets.name",
-                "to": "/datasets",
-                "icon": "view_agenda"
-            },
-            {
                 "name": "resources.imports.name",
                 "to": "/imports",
                 "icon": "system_update"
